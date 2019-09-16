@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine:400,700&display=swap');
+/* fonts.google.com; click plus and copy @import link */
+
+body{
+  background-color: blue;
+  background-color: papayawhip;
+  background-color: #77ff00; /*hexidecimal*/
+  background-color: rgb(255,0,0); /*red*/
+  background-color: darkseagreen;
+}
+
+section{
+  background-color: white;
+  background-color: rgba(255,255,255,0.8); /*white with 80% opacity*/
+}
+
+h1{
+  color: orange;
+}
+
+h3{
+  color: blue;
+}
+
+h3 em{
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
+li{
+  font-size: 20px
+  list-style: circle;
+}
+
+ul li{
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  list-style: armenian;
+}
+
+a{
+  color: grey;
+  text-decoration: none;
+  /* removes underline for link */
+}
+
+a:hover{
+  background-color: purple;
+}
+
+a:visited{
+  color: red;
+}
+
+#name{
+  text-align: center;
+}
+/* # for id */
+
+.underline{
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* .for classes */
