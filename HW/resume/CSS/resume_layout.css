@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap');
+
+a{
+  color: green;
+  text-decoration: none;
+}
+
+a:hover{
+  color: orange;
+}
+
+h1{
+  font-family: 'Comfortaa', cursive;
+}
+
+th{
+  text-align: left;
+}
+
+h3{
+  text-decoration: underline;
+}
+
+.Company{
+  font-weight: bold;
+}
+
+.Position{
+  font-style: italic;
+}
+
+#SAI{
+  color: grey;
+}
+
+#name{
+  color: orange;
+  opacity: .70;
+  /* this is the new property */
+}
+
+#CI{
+  color: blue;
+}
+
+#EDU{
+  color: red;
+}
+
+#WLE{
+  color: pink;
+}
