@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Box Model</title>
+
+    <style media="screen">
+
+      header{
+        background-color: green;
+        width: 960px;
+        height: 100px;
+
+        border-style: solid;
+        border-width: 0px 0px 5px 0px;
+
+        margin: -20px auto 30px auto;
+        /* if you use auto, you need to have a width dimension on the area */
+      }
+
+      main{
+        background-color: orange;
+
+        width: 910px; /* width adjusted for padding and border */
+        height: auto;
+
+        padding: 20px;
+        /* padding-top: 20px; */
+        /* can individually adjust padding */
+        /* padding: 20px 20 px 20 px 20px; top right bottom left */
+
+        border-width: 5px;
+        border-style: groove;
+        border-color: red;
+
+        margin-top: 10px;
+        margin-right: auto;
+        margin-bottom: 2px;
+        margin-left: auto;
+        /* trick to put area in center of page */
+      }
+
+      footer{
+        background-color: skyblue;
+        width: 960px;
+        height: 100px;
+        /* can't use auto height for footer or it will collapse on itself with no info */
+
+        margin: 0px auto;
+        /* top + bottom, left + right */
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <main>
+      <h1>Main</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </main>
+
+    <footer>
+      <h1>Footer</h1>
+    </footer>
+
+  </body>
+
+</html>
