@@ -7,19 +7,20 @@ header{
 
 main{
   width: 400px;
-
 }
 
 footer{
   width: 400px;
+  padding: 0;
 }
 
 nav{
-  width: 350px;
+  width: 150px;
 }
 
 nav ul{
-  margin-left: -20px;
+  width: 150px;
+  margin-left: -25px;
 }
 
 nav ul li{
@@ -30,7 +31,6 @@ nav ul li{
 #grid1{
   width: 380px;
   display: block;
-  /* display block puts everything on top of each other and gets rid of grid */
 }
 
 #grid2{
@@ -38,11 +38,19 @@ nav ul li{
   display: block;
 }
 
-#Hobbies{
+#grid2 img{
+  width: 380px;
+}
+
+#grid3{
   width: 380px;
   display: block;
 }
+#grid3 img{
+  width: 380px;
+}
 
-#Hobbies img{
-  width: 300px;
+#grid4{
+  width: 380px;
+  display: block;
 }
