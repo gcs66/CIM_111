@@ -1,9 +1,6 @@
-
-
 header{
   /* background-color: grey; */
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-family: arial;
   width: 950px;
   height: auto;
   margin: 0 auto;
@@ -15,8 +12,7 @@ header{
 
 main{
   /* background-color: grey; */
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
+  font-family: arial;
   width: 910px;
   height: auto;
   margin: 0 auto;
@@ -28,8 +24,7 @@ main{
 
 footer{
   /* background-color: skyblue; */
-  font-family: 'Lato', sans-serif;
-  /* font-weight: 300; */
+  font-family: arial;
   width: 800px;
   height: auto;
   margin: 0px auto;
@@ -64,7 +59,7 @@ nav ul li{
   list-style: none;
   display: inline-block;
   margin-right: 38px;
-  padding: 8px;
+  padding: 7px;
 }
 
 nav ul li a{
