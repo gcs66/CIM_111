@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Show Hide Example</title>
+
+    <style media="screen">
+      .grid{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 2fr;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 id="section1show">Section 1 show</h1>
+    <h1 id="section1hide">Section 1 hide</h1>
+    <section class="grid" id="section1">
+      <h2>Section 1 info</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <p id="section2mouse">Mouse over to show and hide section 2</p>
+    <section class="grid" id="section2">
+      <h2>Section 2 info</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
+
+    <h1 id="openSections">Toggle all sections</h1>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $("#section1").hide();
+
+        $(".grid").hide();
+
+        $("#section1show").click(function(){
+          $("#section1").show(2000);
+        });
+
+        $("#section1hide").click(function(){
+          $("#section1").hide();
+        });
+
+        $("#section2mouse").mouseenter(function(){
+          $("#section2").show();
+        });
+
+        $("#section2mouse").mouseleave(function(){
+          $("#section2").hide();
+        });
+
+        $("#openSections").click(function(){
+          // $(".grid").hide();
+          $(".grid").toggle(1000);
+          // add number to animate
+          // with the .hide this is the same as .show, normally toggle just does opposite of current state
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
