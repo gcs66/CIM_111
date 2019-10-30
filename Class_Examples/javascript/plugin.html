@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Plugin Example</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <style media="screen">
+      img{
+        width: 200px;
+      }
+
+      .char1{
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1 class="fancy_title">Some Title</h1>
+
+    <!-- Theoretically you would have a better resolution file for the href -->
+    <a data-fancybox="gallery" href="https://farm1.staticflickr.com/691/21910094866_ce00b4be41_b.jpg"><img src="https://farm1.staticflickr.com/691/21910094866_ce00b4be41_b.jpg"></a>
+    <a data-fancybox="gallery" href="https://live.staticflickr.com/2463/3723736091_be57900b9d.jpg"><img src="https://live.staticflickr.com/2463/3723736091_be57900b9d.jpg"></a>
+
+    <!-- Step 1: JQuery Script -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!-- Step 2: Plugin script -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script type="text/javascript" src="jquery.lettering-0.6.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+	         $(".fancy_title").lettering();
+	        });
+    </script>
+
+  </body>
+</html>
