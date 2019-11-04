@@ -94,12 +94,8 @@ nav ul li:hover{
 }
 
 #grid2 img{
-  width: 240px;
+  height: 200px;
   margin: 0 auto;
-  border-style: solid;
-  border-width: thin;
-  border-color: grey;
-  /* box-shadow: 10px 10px; */
 }
 
 #grid2 p{
@@ -117,7 +113,7 @@ nav ul li:hover{
 }
 
 #grid3 img{
-  width: 240px;
+  width: 250px;
 }
 
 #grid4{
@@ -137,4 +133,9 @@ nav ul li:hover{
 
 #grid4 p{
   text-align: center;
+}
+
+.expand{
+  text-align: center;
+  color: blue;
 }
