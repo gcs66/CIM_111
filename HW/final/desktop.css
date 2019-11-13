@@ -161,7 +161,31 @@ nav ul li:hover{
   text-align: center;
 }
 
+#grid6{
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 20px;
+}
+
+#grid6 img{
+  width: 240px;
+}
+
 main a:visited{
   text-decoration: none;
   color: black;
+}
+
+#resume{
+  width: 910px;
+  margin: 0 auto;
+}
+
+.expand{
+  text-align: center;
+  color: blue;
 }

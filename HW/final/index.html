@@ -31,6 +31,7 @@
 
     <main>
       <h2 id="About" class="Title"><a href="about.html">About</a></h2>
+      <p class="expand" id="showAbout">Click here to show/hide</p>
       <section id="grid1">
         <h3>Education</h3>
         <p>I am currently a senior majoring in Finance at the University of Miami in Coral Gables, FL. My minors include Accounting, Marketing and Graphic Design.
@@ -40,6 +41,7 @@
       </section>
 
       <h2 id="Work" class="Title"><a href="work.html">Work</a></h2>
+      <p class="expand" id="showWork">Click here to show/hide</p>
       <section id="grid2">
         <section>
           <img src="images/NoOneElse.jpg" alt="No One Else">
@@ -56,6 +58,7 @@
       </section>
 
       <h2 id="Inspiration" class="Title"><a href="inspiration.html">Inspiration</a></h2>
+      <p class="expand" id="showInspiration">Click here to show/hide</p>
       <section id="grid3">
         <img src="https://pbs.twimg.com/media/DtQcD-kU8AAs1RZ.jpg" alt="A Moment Apart" cite="ODESZA - A Moment Apart (Deluxe)">
         <p>ODESZA - A Moment Apart (Deluxe)<br><br>
@@ -81,6 +84,34 @@
         </tr>
       </table>
     </footer>
+
+    <script src="https://code.nath.co/src/jQuery.min.js"></script>
+    <script src="https://rawgit.com/nathco/jQuery.mousetip/master/jQuery.mousetip.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+
+        $("#grid1").hide();
+        $("#grid2").hide();
+        $("#grid3").hide();
+
+        $("#showAbout").click(function(){
+          $("#grid1").toggle(1000);
+          $("#showAbout").css("color","grey");
+          });
+
+        $("#showWork").click(function(){
+          $("#grid2").toggle(1000);
+          $("#showWork").css("color","grey");
+          });
+
+        $("#showInspiration").click(function(){
+          $("#grid3").toggle(1000);
+          $("#showInspiration").css("color","grey");
+          });
+      });
+
+
+    </script>
 
   </body>
 
